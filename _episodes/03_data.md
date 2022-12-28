@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Data and metadata"
 teaching: 0
 exercises: 0
 questions:
