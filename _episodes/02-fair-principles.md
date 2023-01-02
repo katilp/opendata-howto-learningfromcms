@@ -1,5 +1,5 @@
 ---
-title: "FAIR principles for research data"
+title: "FAIR principles for data"
 teaching: 10
 exercises: 20
 questions:
