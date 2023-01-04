@@ -57,7 +57,7 @@ Many different container images are available, such as the `jupyter/datascience-
 
 For security reasons, it is best to use the official images or images provided by otherwise trusted organizations.
 
-Assume you could use the `jupyter/datascience-notebook` container for your data analysis, but it would require some libraries in addition to those already installed. 
+Assume you could use the `jupyter/datascience-notebook` container for your data analysis, but it would require some libraries in addition to those already installed.
 
 ### 1. Build a new image
 
