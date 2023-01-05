@@ -5,9 +5,8 @@ exercises: 40
 questions:
 - "But how do I open these data files?"
 objectives:
-- "See What can be done if the data are not in quite common format?"
 - "Learn how containers are used to provide the analysis enviroment for CMS open data"
-- "Reflect on need and possibilities to provide an analysis environment compatible with your research data"
+- "Build a new container image from an existing base image"
 keypoints:
 - "Complex research data may require a specific environment and a specific set of software tools for analysis and access"
 - "Software containers are practical for providing an analysis environment for open data."
@@ -40,7 +39,11 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the CMSSW container that you have downloaded and follow the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files.
+> Start the CMSSW container that you have downloaded and follow the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
+> 
+> - this is the environment used in data analysis within the CMS collaboration
+> - it includes all software and helper scripts needed for analysis of CMS data
+> - it has a configurable executable called `cmsRun`.
 >
 {: .challenge}
 
@@ -49,7 +52,7 @@ Why containers and not just software? For complex data such as those from CMS, t
 > ## What do you need?
 >
 > - Does opening and analysing your research data require some specific operating system and/or software tools?
-> - Does it require some specific versions of common software tools?
+> - Does your analysis run only on a specific processor architecture (arm vs amd/x86)?
 >
 {: .discussion}
 
@@ -57,15 +60,17 @@ Many different container images are available, such as the `jupyter/datascience-
 
 For security reasons, it is best to use the official images or images provided by otherwise trusted organizations.
 
-Assume you could use the `jupyter/datascience-notebook` container for your data analysis, but it would require some libraries in addition to those already installed.
+If the image size is an important factor, as it may be today during this tutorial, you may want to choose the smallest available base image and only install the libraries that you need.
+
+Assume you could use the [`python` container](https://hub.docker.com/_/python) for your data analysis, but it would require some libraries in addition to those already installed.
 
 ### 1. Build a new image
 
-It is easy to build a new container image starting from an existing one. The "recipe" to build a new image is in a file called [Dockerfile](https://docs.docker.com/engine/reference/builder/). To install an additional python library (e.g. [`howdoi`](https://github.com/gleitz/howdoi)), your `Dockerfile` would be:
+It is easy to build a new container image starting from an existing one. The "recipe" to build a new image is in a file called [Dockerfile](https://docs.docker.com/engine/reference/builder/). To [install](https://pip.pypa.io/en/stable/cli/pip_install/) additional python libraries (e.g. [`emoji`](https://pypi.org/project/emoji/) although it is highly unlikely that your analysis depends on the capability of printing out emojis...), your `Dockerfile` would be:
 
 ~~~
-FROM jupyter/datascience-notebook
-RUN pip install howdoi
+FROM python
+RUN pip install emoji
 ~~~
 {: .source}
 
@@ -79,29 +84,29 @@ docker build --tag my-new-image .
 Here we use `my-new-image` as the image name, but you can choose another name. Once the build has finished, you would start a container from this new image with
 
 ~~~
-docker run -it --rm -p 8888:8888  my-new-image
+docker run -it --rm my-new-image
 ~~~
 {: .language-bash}
 
-Open the web interface, and a terminal in it, and test that the new library is available. With this library, you can query free text topics e.g. for using datetime in python:
+Test that the new library is available and it works with:
 
 ~~~
-howdoi use datetime in python
+from emoji import emojize as em
+print(em(":snowflake:"))
 ~~~
-{: .language-bash}
-
+{: .language-python}
 
 > ## Build a new container image
 >
-> - Build a new container image with a python library of your choice starting from `jupyter/datascience-notebook` image. If applicable, use a library relevant to your field of study.
+> - Build a new container image with a python library of your choice starting from `python` image. If applicable, use a library relevant to your field of study.
 >
 {: .challenge}
 
 ### 2. Share your new image
 
-Your new image is now available locally. To make it available to others, you would upload it to an image repository e.g. to [dockerhub](https://hub.docker.com/).
+Your new image is now available locally. To make it available to others, you would upload it to an image repository e.g. to [Docker Hub](https://hub.docker.com/).
 
-First, create a dockerhub account.
+First, create a Docker Hub account.
 
 Then, find the image id (the 12-character alphanumeric string) with
 
@@ -117,7 +122,7 @@ docker tag <IMAGE ID>  <DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
-Login to dockerhub and push the image there
+Login to Docker Hub and push the image there
 
 ~~~
 docker login --username=<DOCKERHUB USER NAME>

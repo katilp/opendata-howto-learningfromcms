@@ -69,7 +69,7 @@ Each experiment has its own open data policy that specifies the details of
 Whether or not your are required to provide open data, you should follow a code of conduct for research integrity, see for example [The European Code of Conduct for
 Research Integrity](http://www.allea.org/wp-content/uploads/2017/03/ALLEA-European-Code-of-Conduct-for-Research-Integrity-2017-1.pdf). Your institutions may have similar documents.
 
-Two separate topics are of importance in our context:
+Two separate topics related to research integrity are of importance in our context:
 - Preserving what is necessary for reproducibility of your research results.
 - Agreeing on the use of open data and/or commonly developed software by the members of a research group or a collaboration.
 

@@ -5,7 +5,6 @@ exercises: 30
 questions:
 - "What does FAIR mean for complex research data"
 objectives:
-- "See what is needed be describe CMS data so that they can be reused"
 - "Observe how the challenges for complex research data are addressed in CMS open data records"
 - "Reflect on reusability of your own research data"
 keypoints:
@@ -22,6 +21,10 @@ In the following, we take the example of CMS open data. Note that we have the lu
 > - Would they make your open data FINDABLE and ACCESSIBLE?
 > 
 {: .discussion}
+
+Arranging a repository from which open data can be downloaded should not be a responsibility of a single researcher but of an institution.
+
+Long-term preservation and availability should be considered - and it should be beyoud the lifetime of the experiment or the collaboration.
 
 ## CMS open data records
 
@@ -46,7 +49,7 @@ Now, let us have a look at some CMS open data records: e.g. [collison dataset fr
 
 CMS has released more than 3 PB of open data. All that amount is not needed for research-level work on these data, but certainly several TB's or data need to be accessed.
 
-CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desided.
+CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desired.
 
 ## Your data
 

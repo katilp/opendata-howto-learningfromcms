@@ -7,14 +7,11 @@ questions:
 objectives:
 - "Get a concrete understanding of FAIR principles."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "FAIR principles offer good guidelines for making data reusable"
+- "It is not always easy to understand what they should mean for more complex research data"
 ---
 
-You have been told to provide open data.
-
-You have been told that open data need to be "FAIR": Findable, Accessible, Interoperable, Reusable. OK.
-
-Let's start with learning more about these FAIR principles.
+Open data are required to be "FAIR": Findable, Accessible, Interoperable, Reusable.  Let us start with learning more about these FAIR principles.
 
 > ## Read quickly
 >
@@ -26,7 +23,7 @@ Nice. But what do they even mean?
 
 > ## Exercise
 >
-> Go concrete:
+> Have a concrete look at some open data:
 >
 > - FINDABLE: find some weather data
 > - ACCESSIBLE: download the selected dataset
@@ -61,14 +58,14 @@ Nice. But what do they even mean?
 https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 this is an html comment -->
 
-> ## Did the exercise help us to understand what is FAIR?
+> ## Are these data FAIR?
 >
 > Can we now connect the FAIR qualities of data in this simple exercise to what was described in the [FAIR principles](https://www.go-fair.org/fair-principles/)?
 >
 > > ## Impressions?
 > >
-> > - F & A look fairly comprehensible.
-> > - I & R remain very abstract (in comparison with the steps in the exercise).
+> > - F & A in the FAIR principle document look fairly comprehensible.
+> > - I & R in the document remain quite abstract (in comparison with the concrete steps in the exercise).
 > >
 > {: .solution}
 {: .callout}
