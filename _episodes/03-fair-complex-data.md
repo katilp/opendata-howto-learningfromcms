@@ -19,12 +19,12 @@ In the following, we take the example of CMS open data. Note that we have the lu
 >
 > - Do you have such repositories at your disposal?
 > - Would they make your open data FINDABLE and ACCESSIBLE?
-> 
+>
 {: .discussion}
 
 Arranging a repository from which open data can be downloaded should not be a responsibility of a single researcher but of an institution.
 
-Long-term preservation and availability should be considered - and it should be beyoud the lifetime of the experiment or the collaboration.
+Long-term preservation and availability should be considered - and it should be beyond the lifetime of the experiment or the collaboration.
 
 ## CMS open data records
 
@@ -32,7 +32,7 @@ We'll go through a quick exercise.
 
 > ## Metadata
 >
-> - Discuss in groups what you think is necessary to describe an open data dataset in a repository (5 mins). List the items. These would the metadata fields.
+> - Discuss in groups what you think is necessary to describe a dataset in an open data repository (5 mins). List the items. These would the metadata fields.
 >
 {: .challenge}
 
@@ -52,6 +52,15 @@ CMS has released more than 3 PB of open data. All that amount is not needed for 
 CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desired.
 
 ## Your data
+
+> ## Your open data?
+>
+> - What kind of open data would you provide?
+> - Are they yours or from a research collaboration?
+> - Are these data usable in another study than yours?
+> - Are these data usable in another context than yours?
+>
+{: .discussion}
 
 {% include links.md %}
 

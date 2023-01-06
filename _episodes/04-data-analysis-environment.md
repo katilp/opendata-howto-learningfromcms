@@ -39,7 +39,7 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the CMSSW container that you have downloaded and follow the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
+> Start the CMSSW container that you have downloaded and follow the middle part (the section of "What is in the CMS data?") of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
 > 
 > - this is the environment used in data analysis within the CMS collaboration
 > - it includes all software and helper scripts needed for analysis of CMS data

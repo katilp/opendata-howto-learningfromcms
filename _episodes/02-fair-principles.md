@@ -19,7 +19,7 @@ Open data are required to be "FAIR": Findable, Accessible, Interoperable, Reusab
 >
 {: .callout}
 
-Nice. But what do they even mean?
+Nice. But what do they mean?
 
 > ## Exercise
 >
