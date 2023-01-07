@@ -39,7 +39,14 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the CMSSW container that you have downloaded and follow the middle part (the section of "What is in the CMS data?") of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
+> Start the CMSSW container that you have downloaded with
+>
+> ~~~
+> docker run -i my_od
+> ~~~
+> {: .language-bash}
+>
+> and follow the middle part (the section of "What is in the CMS data?") of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
 > 
 > - this is the environment used in data analysis within the CMS collaboration
 > - it includes all software and helper scripts needed for analysis of CMS data
@@ -69,7 +76,7 @@ Assume you could use the [`python` container](https://hub.docker.com/_/python) f
 It is easy to build a new container image starting from an existing one. The "recipe" to build a new image is in a file called [Dockerfile](https://docs.docker.com/engine/reference/builder/). To [install](https://pip.pypa.io/en/stable/cli/pip_install/) additional python libraries (e.g. [`emoji`](https://pypi.org/project/emoji/) although it is highly unlikely that your analysis depends on the capability of printing out emojis...), your `Dockerfile` would be:
 
 ~~~
-FROM python
+FROM python:slim-bullseye
 RUN pip install emoji
 ~~~
 {: .source}
@@ -96,9 +103,11 @@ print(em(":snowflake:"))
 ~~~
 {: .language-python}
 
+Exit with `exit()`.
+
 > ## Build a new container image
 >
-> - Build a new container image with a python library of your choice starting from `python` image. If applicable, use a library relevant to your field of study.
+> - Build a new container image with a python library of your choice starting from the `python:slim-bullseye` image. If applicable, use a library relevant to your field of study.
 >
 {: .challenge}
 
@@ -108,17 +117,10 @@ Your new image is now available locally. To make it available to others, you wou
 
 First, create a Docker Hub account.
 
-Then, find the image id (the 12-character alphanumeric string) with
+Then, tag the image with
 
 ~~~
-docker image ls | grep my-new-image
-~~~
-{: .language-bash}
-
-Tag the image with
-
-~~~
-docker tag <IMAGE ID>  <DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker tag my-new-image <DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
@@ -129,6 +131,14 @@ docker login --username=<DOCKERHUB USER NAME>
 docker push <DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
+
+The image appears in your area in [Docker Hub](https://hub.docker.com/) and anyone can download it with
+
+~~~
+docker pull <DOCKERHUB USER NAME>/my-new-image:v1.0.0
+~~~
+{: .language-bash}
+
 
 {% include links.md %}
 

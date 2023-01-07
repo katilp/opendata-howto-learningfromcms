@@ -62,11 +62,16 @@ this is an html comment -->
 >
 > Can we now connect the FAIR qualities of data in this simple exercise to what was described in the [FAIR principles](https://www.go-fair.org/fair-principles/)?
 >
-> > ## Impressions?
+> > ## Questions
 > >
-> > - F & A in the FAIR principle document look fairly comprehensible.
-> > - I & R in the document remain quite abstract (in comparison with the concrete steps in the exercise).
-> >
+> > - Can you cite them with a unique identifier?
+> > - Can you download them using the identifier?
+> > - What about the formal, accessible, shared, and broadly applicable language for knowledge representation??
+> >   - Do we understand this correctly?
+> > - Can you find:
+> >   - rich description of data?
+> >   - usage licence?
+> >   - detailed provenance, i.e. how these data were taken?
 > {: .solution}
 {: .callout}
 
