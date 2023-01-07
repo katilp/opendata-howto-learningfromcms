@@ -9,7 +9,7 @@ objectives:
 - "Build a new container image from an existing base image"
 keypoints:
 - "Complex research data may require a specific environment and a specific set of software tools for analysis and access"
-- "Software containers are practical for providing an analysis environment for open data."
+- "Software containers are practical for providing and sharing an analysis environment for open data."
 ---
 
 ## Data formats
@@ -39,7 +39,7 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the CMSSW container that you have downloaded with
+> Start the previously built CMSSW container `my_od` (if that was name you have chosen for it)) with
 >
 > ~~~
 > docker run -i my_od
@@ -63,13 +63,13 @@ Why containers and not just software? For complex data such as those from CMS, t
 >
 {: .discussion}
 
-Many different container images are available, such as the `jupyter/datascience-notebook` container image that we used in the an earlier episode to look at the weather data. You can explore more in [Docker Hub](https://hub.docker.com/search?q=), the default repository for docker container images.
+Many different container images are available, such as `jupyter/datascience-notebook` that we used in the an earlier episode to look at the weather data. A [`mathworks/matlab`](https://hub.docker.com/r/mathworks/matlab) container image exists as well, but to access it requires the licence. You can explore the available images in [Docker Hub](https://hub.docker.com/search?q=), the default repository for docker container images.
 
 For security reasons, it is best to use the official images or images provided by otherwise trusted organizations.
 
 If the image size is an important factor, as it may be today during this tutorial, you may want to choose the smallest available base image and only install the libraries that you need.
 
-Assume you could use the [`python` container](https://hub.docker.com/_/python) for your data analysis, but it would require some libraries in addition to those already installed.
+Assume you could use a [`python` container](https://hub.docker.com/_/python) for your data analysis, but it would require some libraries in addition to those already installed.
 
 ### 1. Build a new image
 
@@ -107,7 +107,7 @@ Exit with `exit()`.
 
 > ## Build a new container image
 >
-> - Build a new container image with a python library of your choice starting from the `python:slim-bullseye` image. If applicable, use a library relevant to your field of study.
+> - Build a new container image with a python library of your choice starting from the `python:slim-bullseye` image (or another small-size image). If applicable, use a library relevant to your field of study.
 >
 {: .challenge}
 
@@ -120,25 +120,30 @@ First, create a Docker Hub account.
 Then, tag the image with
 
 ~~~
-docker tag my-new-image <DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker tag my-new-image <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
 Login to Docker Hub and push the image there
 
 ~~~
-docker login --username=<DOCKERHUB USER NAME>
-docker push <DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker login --username=<YOUR DOCKERHUB USER NAME>
+docker push <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
 The image appears in your area in [Docker Hub](https://hub.docker.com/) and anyone can download it with
 
 ~~~
-docker pull <DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker pull <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
+> ## Share your new container image
+>
+> - Upload your new docker image to Docker Hub.
+>
+{: .challenge}
 
 {% include links.md %}
 
