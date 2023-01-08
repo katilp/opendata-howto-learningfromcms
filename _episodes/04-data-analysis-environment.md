@@ -39,7 +39,7 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the previously built CMSSW container `my_od` (if that was name you have chosen for it)) with
+> Start the [previously built](https://katilp.github.io/opendata-howto-docker-pre-exercise/03-docker-for-cms-opendata/#start-a-cmssw-open-data-container) CMSSW container `my_od` (if that was name you have chosen for it)) with
 >
 > ~~~
 > docker run -i my_od

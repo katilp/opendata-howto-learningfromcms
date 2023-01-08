@@ -30,7 +30,7 @@ the CMS software CMSSW in a computing environment compatible with the open data,
 
 > ## Hands-on!
 >
-> Start the CMSSW container `my_od` (if that was name you have chosen for it) with
+> Start the [previously built](https://katilp.github.io/opendata-howto-docker-pre-exercise/03-docker-for-cms-opendata/#start-a-cmssw-open-data-container) CMSSW container `my_od` (if that was name you have chosen for it) with
 >
 > ~~~
 > docker run -i my_od

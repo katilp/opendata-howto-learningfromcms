@@ -67,7 +67,7 @@ this is an html comment -->
 > > - Can you cite them with a unique identifier?
 > > - Can you download them using the identifier?
 > > - What about the formal, accessible, shared, and broadly applicable language for knowledge representation??
-> >   - Do we understand this correctly?
+> >   - Do we understand this concept correctly?
 > > - Can you find:
 > >   - rich description of data?
 > >   - usage licence?
