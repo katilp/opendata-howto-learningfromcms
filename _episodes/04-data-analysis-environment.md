@@ -5,6 +5,7 @@ exercises: 40
 questions:
 - "But how do I open these data files?"
 objectives:
+- "Discuss interoperability in terms of data formats and tools needed to open them"
 - "Learn how containers are used to provide the analysis enviroment for CMS open data"
 - "Build a new container image from an existing base image"
 keypoints:
@@ -24,6 +25,7 @@ In many other cases, data can be stored and provided in open access in simpler f
 >
 > - In which format(s) do you store your research data?
 > - Are those formats readable with commonly available software tools?
+> - Are those formats commonly in use in your research fields?
 >
 {: .discussion}
 
