@@ -21,9 +21,6 @@ This is the first attempt to use the expertise in the CMS open data to illustrat
 >
 {: .callout}
 
-
-
-
 <!-- this is an html comment -->
 
 {% comment %} This is a comment in Liquid {% endcomment %}

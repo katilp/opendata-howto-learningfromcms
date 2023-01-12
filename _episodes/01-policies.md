@@ -94,7 +94,7 @@ For your data analysis, preserving your work will consist of three main steps:
 
 ![3 steps of analysis preservation: 1. capture software, 2. capture commands, 3. capture workflows](../fig/analysis-preservation.png){: .image-with-shadow }
 
-We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently from open data. You are encouraged to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinary](https://coderefinery.org/) team.
+We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently from open data. You are encouraged to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinery](https://coderefinery.org/) team.
 
 ### Agreeing on the use of open data products by the members of a research group or a collaboration
 
@@ -102,7 +102,7 @@ Through open data releases, open data producer/owner waives all rights so that o
 
 It is important to agree within the research group or the collaboration what are the expectations for the members of the group/collaboration on the use of open data. 
 
-For example, the CMS collaboration has agreed upon internal guidelines that request collaboration members who plan to make studies on open data and publish them under their own name to submit the proposal to the publication committee chair. The proposal can be approved if similar efforts are not planned, or already on the way, within the collaboration.
+For example, all physics results of CMS go through an internal review process and are published under the full CMS collaboration. For open data, the CMS collaboration has agreed upon internal guidelines that request collaboration members who plan to make studies on open data and publish them under their own name to submit the proposal to the publication committee chair. The proposal can be approved if similar efforts are not planned, or already on the way, within the collaboration.
 
 {% include links.md %}
 

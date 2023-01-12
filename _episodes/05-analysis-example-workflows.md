@@ -65,7 +65,7 @@ source commands.sh
 
 Most of them still rely on users typing the commands by hand, but an effort is ongoing to include command scripts and properly scalable multi-step workflows. For testing purposes, they can be implemented as [GitHub action workflows](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) or [GitLab pipelines](https://docs.gitlab.com/ee/ci/pipelines/). Some are also implemented as examples on the [REANA](https://reanahub.io/) platform at CERN.
 
-The next challenge for CMS is to further investigate different computational workflow engines and provide analysis workflow implementations so that they can scale easily from initial testing on small amount of data to full-scale processing on computing clusters or public cloud resources. 
+The next challenge for CMS is to further investigate different computational workflow engines (e.g. argo, airflow, luigi...) and provide analysis workflow implementations so that they can scale easily from initial testing on small amount of data to full-scale processing on computing clusters or public cloud resources. 
 
 ## Your analysis workflows
 

@@ -45,13 +45,19 @@ Now, let us have a look at some CMS open data records: e.g. [collison dataset fr
 > - What's your impression: are these metadata enough to make the data usable?
 {: .challenge}
 
+For CMS open data, we have found necessary to provide:
+
+- content metadata (what, how much etc)
+- provenance metadata (how were they collected and reprocessed)
+- context metadata (how to use them and connect them to other data products).
+
 Data being usable does not necessarily mean that they are easy to use. The CMS collaboration has published more than 1000 [physics analysis papers](https://cms-results-search.web.cern.ch/). It takes several months or more than a year (and most often a Ph.D) for each of them. The open data users need to invest a similar amount of time, it will not be quick and easy to get a new result out of them. Making data open does not make them simple.
 
 ## Accessing data
 
 CMS has released more than 3 PB of open data. All that amount is not needed for research-level work on these data, but certainly several TB's or data need to be accessed.
 
-CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desired.
+CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desired. 
 
 ## Your data
 

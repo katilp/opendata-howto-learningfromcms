@@ -117,27 +117,27 @@ Exit with `exit()`.
 
 Your new image is now available locally. To make it available to others, you would upload it to an image repository e.g. to [Docker Hub](https://hub.docker.com/).
 
-First, create a Docker Hub account.
+[Create a Docker account](https://katilp.github.io/opendata-howto-docker-pre-exercise/04-docker-account/index.html) if not already done.
 
 Then, tag the image with
 
 ~~~
-docker tag my-new-image <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker tag my-new-image <YOUR DOCKER ACCOUNT NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
 Login to Docker Hub and push the image there
 
 ~~~
-docker login --username=<YOUR DOCKERHUB USER NAME>
-docker push <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker login --username=<YOUR DOCKER ACCOUNT NAME>
+docker push <YOUR DOCKER ACCOUNT NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 
 The image appears in your area in [Docker Hub](https://hub.docker.com/) and anyone can download it with
 
 ~~~
-docker pull <YOUR DOCKERHUB USER NAME>/my-new-image:v1.0.0
+docker pull <YOUR DOCKER ACCOUNT NAME>/my-new-image:v1.0.0
 ~~~
 {: .language-bash}
 

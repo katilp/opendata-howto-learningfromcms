@@ -40,7 +40,23 @@ For GitHub actions, you can have a look at some simple implementations in the wo
 >
 {: .challenge}
 
+In these simple implementations, an already built container image is used. Note that both GitHub and GitLab have functionalities to build and push a new image in the CI/CD step.
+
 
 ### Computational workflow engines
+
+There are several open-source computational workflow engines that can be used to combine different steps of analysis workflow, e.g.
+
+- [airflow](https://airflow.apache.org/)
+- [luigi](https://github.com/spotify/luigi)
+- [mlflow](https://mlflow.org/) 
+- [argo workflows](https://argoproj.github.io/workflows)
+- [kubeflow](https://www.kubeflow.org/)
+
+out of which mlflow and kubeflow are machine-learning oriented.
+
+The number of people that have "starred" their code repositories give some indication on their popularity ([source](https://star-history.com/#spotify/luigi&kubeflow/kubeflow&mlflow/mlflow&apache/airflow&argoproj/argo-workflows&Date)).
+
+<img src="../fig/star-history-2023112.png" alt="Popularity curve in GitHub stars of workflow engines, currently: apache/airflow 28k, spotify/luigi 16k, mlflow/mlflow 13k, argoproj/argo-workflows 12k, kubeflow/kubeflow 12" width="70%"/>
 
 {% include links.md %}
