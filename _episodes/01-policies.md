@@ -102,7 +102,7 @@ Through open data releases, open data producer/owner waives all rights so that o
 
 It is important to agree within the research group or the collaboration what are the expectations for the members of the group/collaboration on the use of open data. 
 
-For example, all physics results of CMS go through an internal review process and are published under the full CMS collaboration. For open data, the CMS collaboration has agreed upon internal guidelines that request collaboration members who plan to make studies on open data and publish them under their own name to submit the proposal to the publication committee chair. The proposal can be approved if similar efforts are not planned, or already on the way, within the collaboration.
+For example, all physics results of CMS go through an internal review process and are published under the full CMS collaboration. For open data, the CMS collaboration has agreed upon internal guidelines that request collaboration members who plan to make studies on open data and publish them under their own names to submit the proposal to the publication committee chair. The proposal can be approved if similar efforts are not planned, or ongoing, within the collaboration.
 
 {% include links.md %}
 

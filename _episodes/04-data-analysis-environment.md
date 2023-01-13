@@ -17,7 +17,7 @@ keypoints:
 
 This section addresses the concept of "interoperability", I in FAIR. In the description of the [FAIR principles](https://www.go-fair.org/fair-principles/), for an inpatient and/or simple-minded reader, this translates to a requirement of data being in some common format that can be opened and analysed with the standard tools in their research domain.
 
-For CMS open data, this is both true and false. The data files are in the ROOT format, [ROOT](https://root.cern/) being a framework for data processing commonly in use in particle physics. However, data are processsed with the CMS specific software (CMSSW) which gives additional structure and interconnections to the data objects. CMSSW is open source, yet it is certainly not a "broadly applicable language for knowledge representation". But this is what we have and this is what we release.
+For CMS open data, this is both true and false. The data files are in the ROOT format, [ROOT](https://root.cern/) being a framework for data processing commonly in use in particle physics. However, data are processed with the experiment-specific software (CMSSW) which gives additional structure and interconnections to the data objects. CMSSW is open source, yet it is certainly not a "broadly applicable language for knowledge representation". But this is what we have and this is what we release.
 
 In many other cases, data can be stored and provided in open access in simpler formats, such CSV, JSON or others.
 
@@ -41,7 +41,7 @@ Why containers and not just software? For complex data such as those from CMS, t
 
 > ## Hands-on!
 >
-> Start the [previously built](https://katilp.github.io/opendata-howto-docker-pre-exercise/03-docker-for-cms-opendata/#start-a-cmssw-open-data-container) CMSSW container `my_od` (if that was name you have chosen for it)) with
+> Start the [previously built](https://katilp.github.io/opendata-howto-docker-pre-exercise/03-docker-for-cms-opendata/#start-a-cmssw-open-data-container) CMSSW container `my_od` (if that was the name you have chosen for it)) with
 >
 > ~~~
 > docker run -i my_od
@@ -65,9 +65,9 @@ Why containers and not just software? For complex data such as those from CMS, t
 >
 {: .discussion}
 
-Many different container images are available, such as `jupyter/datascience-notebook` that we used in the an earlier episode to look at the weather data. A [`mathworks/matlab`](https://hub.docker.com/r/mathworks/matlab) container image exists as well, but to access it requires the licence. You can explore the available images in [Docker Hub](https://hub.docker.com/search?q=), the default repository for docker container images.
+Many different container images are available, such as `jupyter/datascience-notebook` that we used in the earlier episode to look at the weather data. A [`mathworks/matlab`](https://hub.docker.com/r/mathworks/matlab) container image exists as well, but accessing it requires a licence. You can explore the available images in [Docker Hub](https://hub.docker.com/search?q=), the default repository for docker container images.
 
-For security reasons, it is best to use the official images or images provided by otherwise trusted organizations.
+For security reasons, it is best to use official images or images provided by otherwise trusted organizations.
 
 If the image size is an important factor, as it may be today during this tutorial, you may want to choose the smallest available base image and only install the libraries that you need.
 

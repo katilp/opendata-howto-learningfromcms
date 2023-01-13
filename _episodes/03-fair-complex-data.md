@@ -3,14 +3,14 @@ title: "FAIR principles for complex research data"
 teaching: 10
 exercises: 30
 questions:
-- "What does FAIR mean for complex research data"
+- "What does FAIR mean for complex research data?"
 objectives:
 - "Observe how the challenges for complex research data are addressed in CMS open data records"
 - "Reflect on reusability of your own research data"
 keypoints:
-- "Making data open does not make them simple"
-- "Describing complex research data so that they are reusable can get involved"
-- "Open data users are expected to invest time in learning"
+- "Making data open does not make them simple."
+- "Describing complex research data so that they are reusable can get involved."
+- "Open data users are expected to invest time in learning."
 ---
 
 In the following, we take the example of CMS open data. Note that we have the luxury of having the [CERN open data portal](http://opendata.cern.ch/) through which all CMS open data can be searched and distributed.
@@ -32,7 +32,7 @@ We'll go through a quick exercise.
 
 > ## Metadata
 >
-> - Discuss in groups what you think is necessary to describe a dataset in an open data repository (5 mins). List the items. These would the metadata fields.
+> - Discuss in groups what you think is necessary to describe a dataset in an open data repository (5 mins). List the items. These would be the metadata fields.
 >
 {: .challenge}
 
@@ -40,22 +40,22 @@ Now, let us have a look at some CMS open data records: e.g. [collison dataset fr
 
 > ## Your observations of metadata in CMS open data records?
 >
-> - Without background in particle physics, how much do you understand of them?
+> - Without a background in particle physics, how much do you understand of them?
 > - Is there something obvious missing?
 > - What's your impression: are these metadata enough to make the data usable?
 {: .challenge}
 
-For CMS open data, we have found necessary to provide:
+For CMS open data, we have found it necessary to provide:
 
 - content metadata (what, how much etc)
 - provenance metadata (how were they collected and reprocessed)
 - context metadata (how to use them and connect them to other data products).
 
-Data being usable does not necessarily mean that they are easy to use. The CMS collaboration has published more than 1000 [physics analysis papers](https://cms-results-search.web.cern.ch/). It takes several months or more than a year (and most often a Ph.D) for each of them. The open data users need to invest a similar amount of time, it will not be quick and easy to get a new result out of them. Making data open does not make them simple.
+Data being usable does not necessarily mean that they are easy to use. The CMS collaboration has published more than 1000 [physics analysis papers](https://cms-results-search.web.cern.ch/). It takes several months or more than a year (and most often a Ph.D.) for each of them. The open data users need to invest a similar amount of time, it will not be quick and easy to get a new result out of them. Making data open does not make them simple.
 
 ## Accessing data
 
-CMS has released more than 3 PB of open data. All that amount is not needed for research-level work on these data, but certainly several TB's or data need to be accessed.
+CMS has released more than 3 PB of open data. All that amount is not needed for research-level work on these data, but certainly several TBs of data need to be accessed.
 
 CMS open data is most commonly accessed "streaming" during the analysis job runtime, but the data files can be downloaded with a https download if desired. 
 

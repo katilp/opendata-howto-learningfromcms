@@ -7,8 +7,8 @@ questions:
 objectives:
 - "Get a concrete understanding of FAIR principles."
 keypoints:
-- "FAIR principles offer good guidelines for making data reusable"
-- "It is not always easy to understand what they should mean for more complex research data"
+- "FAIR principles offer good guidelines for making data reusable."
+- "It is not always easy to understand what they should mean for more complex research data."
 ---
 
 Open data are required to be "FAIR": Findable, Accessible, Interoperable, Reusable.  Let us start with learning more about these FAIR principles.
@@ -82,9 +82,9 @@ this is an html comment -->
 > > ## Caveat
 > >
 > > - Research data are usually much more complex.
-> > - Temperature is something that people can immediately understand, but most of our reaserch data is not.
+> > - Temperature is something that people can immediately understand, but most of our research data is not.
 > > - The fact that you can plot a temperature from an open dataset does not imply that you can use it in research.
-> > - Reusability of research data can hardly ever be simplified to ensuring variable names are explained or self-explanatory.
+> > - Reusability of research data is hardly ever as simple as ensuring variable names are explained or self-explanatory.
 > >
 > {: .solution}
 {: .callout}

@@ -1,9 +1,6 @@
 ---
 layout: reference
+title: "Key points"
 ---
-
-## Glossary
-
-FIXME
 
 {% include links.md %}
