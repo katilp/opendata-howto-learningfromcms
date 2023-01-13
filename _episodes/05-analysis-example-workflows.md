@@ -33,7 +33,7 @@ the CMS software CMSSW in a computing environment compatible with the open data,
 > Start the [previously built](https://katilp.github.io/opendata-howto-docker-pre-exercise/03-docker-for-cms-opendata/#start-a-cmssw-open-data-container) CMSSW container `my_od` (if that was the name you have chosen for it) with
 >
 > ~~~
-> docker run -i my_od
+> docker start -i my_od
 > ~~~
 > {: .language-bash}
 >
