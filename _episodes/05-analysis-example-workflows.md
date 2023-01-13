@@ -37,7 +37,9 @@ the CMS software CMSSW in a computing environment compatible with the open data,
 > ~~~
 > {: .language-bash}
 >
-> and run the example code called ["Physics Object Extractor Tool"](http://opendata.cern.ch/record/12502) or POET for short as instructed in the last part of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#nice). Note that
+> and follow the instructions in the last part of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#nice) run the example code called "Physics Object Extractor Tool" or POET for short. Note that, in the container, you are already in the working directory and the command to get there, if needed, would be `cd /code/CMSSW_7_6_7/src`.
+>
+> Note that
 > 
 > - the example configuration file indicates how additional data products are combined with the actual data
 > - the example code documents how different selections and corrections should be applied to the data
