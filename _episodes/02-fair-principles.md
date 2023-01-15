@@ -37,9 +37,14 @@ Nice. But what do they mean?
 > > - Download
 > > - Open a jupyter notebook, either what you have installed or with the docker container
 > >   ~~~
-> >   docker run -it --rm -p 8888:8888  jupyter/datascience-notebook
+> >   docker run -it --rm --name notebook -p 8888:8888  jupyter/datascience-notebook
 > >   ~~~
-> > {: .source}
+> >   {: .language-bash}
+> > - If you use the container, in another local shell on your laptop, copy the file you have downloaded locally into the container (`/home/jovyan` is the working directory in the container):
+> >   ~~~
+> >   docker cp <filename> notebook:/home/jovyan
+> >   ~~~
+> >   {: .language-bash}
 > > - in the notebook (replace the filename with what you have downloaded):
 > >   ~~~
 > >   import pandas as pd
@@ -47,7 +52,7 @@ Nice. But what do they mean?
 > >   data=pd.read_csv('STD Datensatz_20220101T0000_20221227T2300.csv')
 > >   plt.plot(data.TTX)
 > >   ~~~
-> > {: .source}
+> >   {: .language-python}
 > > 
 > > ![temperature plot](../fig/01-landeck-temp.png){: .image-with-shadow }
 > {: .solution}

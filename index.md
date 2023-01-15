@@ -25,6 +25,8 @@ This is the first attempt to use the expertise in CMS open data to illustrate th
 
 {% comment %} This is a comment in Liquid {% endcomment %}
 
+We will start with a short [introduction](https://docs.google.com/presentation/d/1iNy-2XyMlfJMlJsZBfjIYRf7CBaAhiJyQAZicZ5JBos/edit?usp=sharing).
+
 > ## Prerequisites
 >
 > You have got started with `docker`: have it running and have the docker software images downloaded on your laptop as instructed in the [docker tutorial](https://katilp.github.io/opendata-howto-docker-pre-exercise/)

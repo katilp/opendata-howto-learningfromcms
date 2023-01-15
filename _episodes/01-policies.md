@@ -81,26 +81,26 @@ Two separate topics related to research integrity are of importance in our conte
 The European Code of Conduct for Research Integrity lists the following points:
 
 - Under **Research Environment**: 
-  - Research institutions and organisations support proper infrastructure for the management and protection of data and research materials in all their forms (encompassing qualitative and quantitative data, protocols, processes, other research artefacts and associated metadata) that are necessary for reproducibility, traceability and accountability.
+  - "Research institutions and organisations support proper infrastructure for the management and protection of data and research materials in all their forms (encompassing qualitative and quantitative data, protocols, processes, other research artefacts and associated metadata) that are necessary for reproducibility, traceability and accountability."
 - Under **Research Procedures**:
-  - Researchers design, carry out, analyse and document research in a careful and well-considered manner
-  - Researchers report their results in a way that is compatible with the standards of the discipline and, where applicable, can be verified and reproduced.
+  - "Researchers design, carry out, analyse and document research in a careful and well-considered manner."
+  - "Researchers report their results in a way that is compatible with the standards of the discipline and, where applicable, can be verified and reproduced."
 - Under **Data Practices and Management**:
-  - Researchers, research institutions and organisations ensure appropriate stewardship and curation of all data and research materials, including unpublished ones, with secure preservation for a reasonable period.
+  - "Researchers, research institutions and organisations ensure appropriate stewardship and curation of all data and research materials, including unpublished ones, with secure preservation for a reasonable period."
 
-As a researcher, it is your duty to document and preserve your work. It is the duty of research institutions to provide proper infrastructure for doing so. And that infrastructure is not your hard drive. 
+As a researcher, it is your duty to **document and preserve your work**. It is the duty of research institutions to provide proper infrastructure for doing so. And that infrastructure is not your hard drive. 
 
 For your data analysis, preserving your work will consist of three main steps:
 
 ![3 steps of analysis preservation: 1. capture software, 2. capture commands, 3. capture workflows](../fig/analysis-preservation.png){: .image-with-shadow }
 
-We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently from open data. You are encouraged to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinery](https://coderefinery.org/) team.
+We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently from open data. You are encouraged to have a look at the supplementary material on [best practices]({{ page.root }}/guide/) and to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinery](https://coderefinery.org/) team.
 
 ### Agreeing on the use of open data products by the members of a research group or a collaboration
 
 Through open data releases, open data producer/owner waives all rights so that others may freely build upon, enhance and reuse the works for any purposes without restriction under copyright or database law.
 
-It is important to agree within the research group or the collaboration what are the expectations for the members of the group/collaboration on the use of open data. 
+It is important to agree within the research group or the collaboration what are the expectations for the **members** of the group/collaboration **on the use of open data**. 
 
 For example, all physics results of CMS go through an internal review process and are published under the full CMS collaboration. For open data, the CMS collaboration has agreed upon internal guidelines that request collaboration members who plan to make studies on open data and publish them under their own names to submit the proposal to the publication committee chair. The proposal can be approved if similar efforts are not planned, or ongoing, within the collaboration.
 
