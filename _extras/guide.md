@@ -42,8 +42,18 @@ For GitHub actions, you can have a look at some simple implementations in the wo
 
 In these simple implementations, an already built container image is used. Note that both GitHub and GitLab have functionalities to build and push a new image in the CI/CD step.
 
+You can also have a look at the self-study tutorial material in the [analysis preservation training](https://indico.cern.ch/event/1219810/timetable/) offered to students and researchers in the high-energy physics domain.
+
 
 ### Computational workflow engines
+
+> ## Definition:
+> "A computational workflow is a formalised chain of software tools, which explicitly defines how data is input, how it flows between tools and how it is output. Computational workflows are widely used for data analysis and enable rapid innovation and decision making.
+>
+> The most important benefit of computational workflows is that they require a user to write down, fully formalise and automate their dataflow and process. While this can be a challenge, it allows greater repeatability, shareability and robustness to be achieved."
+>
+> (credit: taken from a [tutorial for CWL](https://carpentries-incubator.github.io/cwl-novice-tutorial/01-introduction/index.html), "Common Workflow Language")
+{: .testimonial}
 
 There are several open-source computational workflow engines that can be used to combine different steps of analysis workflow, e.g.
 

@@ -94,7 +94,7 @@ For your data analysis, preserving your work will consist of three main steps:
 
 ![3 steps of analysis preservation: 1. capture software, 2. capture commands, 3. capture workflows](../fig/analysis-preservation.png){: .image-with-shadow }
 
-We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently from open data. You are encouraged to have a look at the supplementary material on [best practices]({{ page.root }}/guide/) and to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinery](https://coderefinery.org/) team.
+We will briefly address this in the context of open data reusability, but remember that this is something that you should do for all your work independently of open data. You are encouraged to have a look at the supplementary material on [best practices]({{ page.root }}/guide/) and to learn more e.g. from the [Reproducible research tutorial](https://coderefinery.github.io/reproducible-research/) by the [CodeRefinery](https://coderefinery.org/) team.
 
 ### Agreeing on the use of open data products by the members of a research group or a collaboration
 
