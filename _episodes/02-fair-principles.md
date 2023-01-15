@@ -13,17 +13,17 @@ keypoints:
 
 Open data are required to be "FAIR": Findable, Accessible, Interoperable, Reusable.  Let us start with learning more about these FAIR principles.
 
-> ## Read quickly
+> ## Quick reading
 >
-> Read about the [FAIR principles](https://www.go-fair.org/fair-principles/) (3 minutes)
+> Read about the [FAIR principles](https://www.go-fair.org/fair-principles/) (3-5 minutes)
 >
 {: .callout}
 
 Nice. But what do they mean?
 
-> ## Exercise
+> ## Hands-on!
 >
-> Have a concrete look at some open data:
+> Let us have a concrete look at some open data:
 >
 > - FINDABLE: find some weather data
 > - ACCESSIBLE: download the selected dataset
