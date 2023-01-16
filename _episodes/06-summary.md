@@ -29,6 +29,8 @@ If you use them from the start of your data analysis process and follow best cod
 
 ## Discussion and feedback
 
+A feedback form will be linked here.
+
 > ## Credits
 >
 > This tutorial relies on the work done by my CMS open data colleagues: Clemens Lange, Edgar Carrera, Julie Hogan, Thomas McCauley, Matthew Bellis, and many others, and the expertise has been built in collaboration with - and learning from - the CERN open data services.

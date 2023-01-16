@@ -48,12 +48,27 @@ Why containers and not just software? For complex data such as those from CMS, t
 > ~~~
 > {: .language-bash}
 >
-> and follow the middle part (the section of "What is in the CMS data?") of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. Note that
+> and follow the middle part (the section of "What is in the CMS data?") of the ["Getting started" instructions](http://opendata.cern.ch/docs/cms-getting-started-2015#data) to inspect some of the data files. 
+>
+> > ## Shortcut!
+> >
+> > If editing the files is a trouble, you can download the files with edits already done for the second `cmsRun` command. After having created the `MiniAnalyzer` area, make sure that you are in the right directory with
+> > ~~~
+> > cd /code/CMSSW_7_6_7/src/Test/MiniAnalyzer/
+> > ~~~
+> > and get the updated files with
+> > ~~~
+> > curl https://raw.githubusercontent.com/katilp/opendata-howto-learningfromcms/gh-pages/code/04/BuildFile.xml > plugins/BuildFile.xml
+> > curl https://raw.githubusercontent.com/katilp/opendata-howto-learningfromcms/gh-pages/code/04/MiniAnalyzer.cc > plugins/MiniAnalyzer.cc
+> > curl https://raw.githubusercontent.com/katilp/opendata-howto-learningfromcms/gh-pages/code/04/ConfFile_cfg.py > python/ConfFile_cfg.py
+> > ~~~
+> > then compile (`scram b`) and run (`cmsRun python/ConfFile_cfg.py`) as instructed.
+> {: .solution}
+> Note that
 > 
 > - this is the environment used in data analysis within the CMS collaboration
 > - it includes all software and helper scripts needed for analysis of CMS data
 > - it has a configurable executable called `cmsRun`.
->
 {: .challenge}
 
 ## Your analysis environment
@@ -75,7 +90,7 @@ Assume you could use a [`python` container](https://hub.docker.com/_/python) for
 
 ### 1. Build a new image
 
-It is easy to build a new container image starting from an existing one. The "recipe" to build a new image is in a file called [Dockerfile](https://docs.docker.com/engine/reference/builder/). To [install](https://pip.pypa.io/en/stable/cli/pip_install/) additional python libraries (e.g. [`emoji`](https://pypi.org/project/emoji/) although it is highly unlikely that your analysis depends on the capability of printing out emojis...), your `Dockerfile` would be:
+It is easy to build a new container image starting from an existing one. The "recipe" to build a new image is in a file called [Dockerfile](https://docs.docker.com/engine/reference/builder/). To [install](https://pip.pypa.io/en/stable/cli/pip_install/) additional python libraries (e.g. a python library [`emoji`](https://pypi.org/project/emoji/) although it is highly unlikely that your analysis depends on the capability of printing out emojis...), your `Dockerfile` would be:
 
 ~~~
 FROM python:slim-bullseye
@@ -83,7 +98,7 @@ RUN pip install emoji
 ~~~
 {: .source}
 
-Save that as `Dockerfile` in your working directory and build the new container image with:
+Create a new working directory and save these lines as `Dockerfile` in it. Then, in that directory, build the new container image with:
 
 ~~~
 docker build --tag my-new-image .
