@@ -29,7 +29,7 @@ If you use them from the start of your data analysis process and follow best cod
 
 ## Discussion and feedback
 
-A feedback form will be linked here.
+Please fill in the feedback form as soon as possible (you will receive a link from the coordinators).
 
 > ## Credits
 >
