@@ -84,10 +84,20 @@ The choice depends on how the users would use the analysis script: would they mo
 
 Depending on the base image that you've chosen, the container image may or may not include some basic tools. For example, while the standard `python` image has several options to read in files (e.g. `curl`, `wget`, `git`), the slimmer `python:slim-bullseye` has none of them, and reading files into the container will not be possible from the container shell.
 
-In all cases, you can pass the files through a [bind mount](https://docs.docker.com/storage/bind-mounts/), where part of the local filesystem is shared with the container. You can do as instructed under "Run a single Python script" in the [python docker image documentation](https://hub.docker.com/_/python), in the directory where you have your script (here `myscript.py`):
+In all cases, you can pass the files through a [bind mount](https://docs.docker.com/storage/bind-mounts/), where part of the local filesystem is shared with the container. You can do as instructed under "Run a single Python script" in the [python docker image documentation](https://hub.docker.com/_/python), in the directory where you have your script (here `myscript.py`).
+
+Create new directory and save these lines in a file `myscript.py`
 
 ~~~
-docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:slim-bullseye python myscript.py
+from emoji import emojize as em
+print(em(":snowflake:"))
+~~~
+{: .language-python}
+
+Run that script in your new container with
+
+~~~
+docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp my-new-image python myscript.py
 ~~~
 {: .language-bash}
 
