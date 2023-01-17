@@ -137,7 +137,7 @@ If you have data files in the local directory, they will be copied to the contai
 You can run the script in the image with
 
 ~~~
-docker run -it --rm my-new-image:v1.1.0 python myscript.py :yellow_heart::blue_heart:"
+docker run -it --rm my-new-image:v1.1.0 python myscript.py :yellow_heart::blue_heart:
 ~~~
 {: .language-bash}
 
